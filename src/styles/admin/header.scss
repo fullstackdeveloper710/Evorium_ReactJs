@@ -1,0 +1,98 @@
+.header_admin {
+  background: #fff;
+  padding: 34px 35px 14px 60px;
+  box-shadow: 0px 6px 15px 0px rgba(64, 79, 104, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  .title_block {
+    h3 {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #77838f;
+      font-size: 15px;
+      margin-bottom: 0px;
+    }
+  }
+  .right_notifications {
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+    .notification_message {
+      position: relative;
+      cursor: pointer;
+      .messages {
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background: #2e2753;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 8px;
+        top: -3px;
+        right: -7px;
+      }
+    }
+    .my_account_drop_down {
+      button {
+        position: relative;
+        background: transparent;
+        padding: 0px;
+        color: #202124;
+        font-size: 15px;
+        border: 0px;
+        padding-right: 10px;
+        &::after {
+          border: 0px;
+          position: absolute;
+          right: -13px;
+          top: 0px;
+          content: url(../../assets/icons/admin/downarow.png) !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header_admin {
+    padding: 10px 15px;
+    .title_block {
+      h3 {
+        font-size: 17px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+    .right_notifications {
+      width: 50%;
+      .notification_message {
+        .messages {
+          position: absolute;
+          width: 17px;
+          height: 17px;
+        }
+      }
+      .my_account_drop_down {
+        button {
+          font-size: 13px;
+          padding-right: 10px;
+          &::after {
+            right: -7px;
+          }
+        }
+      }
+    }
+  }
+}

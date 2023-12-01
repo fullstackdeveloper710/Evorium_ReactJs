@@ -1,0 +1,16 @@
+.user_modal{
+    .modal-body{
+        padding: 20px;
+        .StripeElement--empty,.StripeElement--invalid,.StripeElement--focus,.StripeElement--complete{
+            padding: 7px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            &:nth-child(3){
+                margin-bottom: 20px;
+            }
+        }
+        .common_btns{
+            text-align: right;
+        }
+    }
+}

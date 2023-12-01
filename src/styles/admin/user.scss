@@ -1,0 +1,85 @@
+.user_tab {
+  padding: 15px;
+  background: #fff;
+  .top_bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .right_search_bar {
+      width: 87%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .search_block {
+        width: 48%;
+        input {
+          margin-right: 10px;
+          width: 70%;
+          padding: 8px 22px;
+          border-radius: 5px;
+          border: 1px solid #9a9797;
+        }
+        button.search_btn {
+          font-size: 14px;
+          background-color: #2e2753;
+          border-radius: 10px;
+          color: #fff;
+          font-family: "poppins", sans-serif;
+          border: 0px;
+          padding: 10px 15px;
+        }
+      }
+      .date_block {
+        display: flex;
+        gap: 20px;
+        .input_wraper {
+          label {
+            font-weight: 500;
+            font-size: 18px;
+            font-family: "poppins", sans-serif;
+            margin-right: 9px;
+          }
+          input {
+            border: 1px solid #9a9797;
+            border-radius: 5px;
+            color: rgba(0, 0, 0, 0.6);
+            padding: 8px 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  .user_tab {
+    .top_bar {
+      display: flex;
+      justify-content: space-between;
+      .right_search_bar {
+        width: 93%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .search_block {
+          text-align: right;
+        }
+        .date_block {
+          display: flex;
+          gap: 10px;
+          .input_wraper {
+            label {
+              font-weight: 500;
+              font-size: 15px;
+              font-family: "poppins", sans-serif;
+              margin-right: 5px;
+            }
+            input {
+              width: 135px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

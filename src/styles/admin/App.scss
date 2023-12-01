@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Jost", sans-serif;
+  background-color: #f5f7fc;
+}
+h3.title {
+  font-size: 30px;
+}
+.main_wrapper {
+  display: flex;
+  .right_section {
+   width: calc(100% - 350px);
+    .admin-content-section {
+      padding: 35px;
+      background-color: #f5f7fc;
+    }
+  }
+}
+.common_btns {
+  button {
+    border-radius: 8px;
+    border: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 13px 25px;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+  }
+  .primary_btn {
+    background-color: #2e2753;
+  }
+  .secondry_btn {
+    background-color: #d91029;
+  }
+  button + button {
+    margin-left: 15px;
+  }
+}
+
+.input_label_wrap {
+  margin-bottom: 20px;
+  label {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 8px;
+  }
+  input,
+  select,
+  textarea {
+    border: 0px;
+    border-radius: 8px;
+    background: #ecedf2;
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 15px;
+    &::placeholder {
+      color: #696969;
+    }
+  }
+}
+
+/* table css here */
+
+.comn_table table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  thead {
+    tr {
+      th {
+        background-color: #2e2753 !important;
+        padding: 25px 10px;
+        color: #fff;
+        vertical-align: middle;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      th:first-child {
+        border-radius: 8px 0px 0px 8px;
+        padding-left: 30px;
+      }
+      th:last-child {
+        border-radius: 0px 8px 8px 0px;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td:first-child {
+        border-left: 1px solid #ecedf2;
+        border-radius: 8px 0px 0px 8px;
+        padding-left: 30px;
+        font-weight: 400;
+        color: #202124;
+      }
+      td:last-child {
+        border-right: 1px solid #ecedf2;
+        border-radius: 0px 8px 8px 0px;
+      }
+      td {
+        color: #2e2753;
+        border-top: 1px solid #ecedf2;
+        vertical-align: middle;
+        padding: 17px 10px;
+        font-family: "Poppins", sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        .view_action,
+        .delete_action {
+          .view_btn,
+          .delete_btn {
+            width: 34px;
+            height: 34px;
+            background-color: #f0f0f3;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .common_btns {
+    button {
+      border-radius: 8px;
+      border: 0px;
+      font-size: 17px;
+      font-weight: 500;
+      padding: 10px 25px;
+      width: 189px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+
+  .main_wrapper {
+    .right_section {
+     width: calc(100% - 300px);
+    }
+  }
+  .comn_table table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    thead {
+      tr {
+        th {
+          background-color: #2e2753 !important;
+          padding: 15px 5px;
+          color: #fff;
+          vertical-align: middle;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        
+      }
+    }
+    tbody {
+      tr {
+        td {
+          color: #2e2753;
+          border-top: 1px solid #ecedf2;
+          vertical-align: middle;
+          padding: 17px 10px;
+          font-family: "Poppins", sans-serif;
+          font-size: 17px;
+          font-weight: 600;
+          
+        }
+      }
+    }
+  }
+}
+
+.right_section {
+  header {
+    justify-content: start;
+    padding-left: 0px;
+    h3 {
+      font-size: 30px;
+      padding: 15px 0px;
+    }
+  }
+}
+
+.view_btn,
+.delete_btn {
+  border: 0px;
+  width: 34px;
+  height: 34px;
+  background-color: #f0f0f3;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.rdt_Pagination {
+  justify-content: start !important;
+  button {
+    border: 0px;
+    background-color: #2e2753;
+    color: #fff;
+    border-radius: 8px;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer !important;
+    & + button {
+      margin-left: 10px;
+    }
+    svg {
+      fill: #fff;
+    }
+  }
+}
+
+.comn_table .table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #ecedf2;
+}
+/* table css here */
+
+
+.modal-content {
+  min-width: 350px;
+
+    .common_btns{
+      button {
+        padding: 10px 29px;
+        width: auto;
+        font-size: 15px;
+      }
+    }
+
+   
+  
+}
+@media (max-width: 767px) {
+  h3.title {
+    font-size: 17px;
+  }
+  .main_wrapper {
+    .right_section {
+      .admin-content-section {
+        padding: 15px;
+      }
+    }
+  }
+  .common_btns {
+    button {
+      font-size: 18px;
+      padding: 10px 35px;
+      width: auto;
+    }
+    button + button {
+      margin-left: 10px;
+    }
+  }
+}

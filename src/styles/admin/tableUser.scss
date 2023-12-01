@@ -1,0 +1,181 @@
+
+.user_table table{
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    thead{
+
+        tr{
+            th{
+                background-color: #2E2753 !important;
+                padding:25px 10px;
+                color: #fff;
+                vertical-align: middle;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            th:first-child{
+                border-radius: 8px 0px 0px 8px;
+                padding-left: 30px;
+            }
+            th:last-child{
+                border-radius: 0px 8px 8px 0px;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td:first-child{
+                border-left: 1px solid #ECEDF2;
+                border-radius: 8px 0px 0px 8px;
+                padding-left: 30px;
+            }
+            td:last-child{
+                border-right: 1px solid #ECEDF2;
+                border-radius: 0px 8px 8px 0px;
+            }
+            td{
+                border-top: 1px solid #ECEDF2;
+                vertical-align: middle;
+                padding: 10px;
+            }
+            .user_name{
+                img{
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    height: 90px;
+                    width: 90px;
+                    object-fit: cover;
+                }
+                .name{
+                    font-weight: 500;
+                    color: #202124;
+                    font-size: 18px;
+                }
+            }
+            .email{
+                .email_link{
+                    text-decoration: none;
+                    font-size: 17px;
+                    color: #2E2753;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                }
+            }
+            .date,.number{
+                span{
+                    font-size: 14px;
+                    color: #2E2753;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                }
+            }
+            .location{
+                span{
+                    font-size: 14px;
+                    color: #696969;
+                    img{
+                        margin-right: 9.11px;
+                    }
+                }
+            }
+            .actions_btns{
+                button{
+                    border: 0px;
+                    border-radius: 8px;
+                    width: 30px;
+                    height: 30px;
+                    img{
+                        width: 13px;
+                    }
+                }
+                button + button{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+.user_section thead{
+    display: none;
+}
+@media (max-width: 1400px) {
+    .user_table table{
+        border-collapse: separate;
+        border-spacing: 0 20px;
+        thead{
+    
+            tr{
+                th{
+                    background-color: #2E2753 !important;
+                    padding:25px 10px;
+                    color: #fff;
+                    vertical-align: middle;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                th:first-child{
+                    border-radius: 8px 0px 0px 8px;
+                    padding-left: 30px;
+                }
+                th:last-child{
+                    border-radius: 0px 8px 8px 0px;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td:first-child{
+                    border-left: 1px solid #ECEDF2;
+                    border-radius: 8px 0px 0px 8px;
+                    padding-left: 30px;
+                }
+                td:last-child{
+                    border-right: 1px solid #ECEDF2;
+                    border-radius: 0px 8px 8px 0px;
+                }
+                td{
+                    border-top: 1px solid #ECEDF2;
+                    vertical-align: middle;
+                    padding: 10px;
+                }
+                .user_name{
+                    img{
+                        border-radius: 50%;
+                        margin-right: 15px;
+                        height: 70px;
+                        width: 70px;
+                        object-fit: cover;
+                    }
+                    .name{
+                        font-weight: 500;
+                        color: #202124;
+                        font-size: 14px;
+                    }
+                }
+                .email{
+                    .email_link{
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: #2E2753;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 600;
+                    }
+                }
+                .date,.number{
+                    span{
+                        font-size: 12px;
+                        color: #2E2753;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 600;
+                    }
+                }
+                .location{
+                    span{
+                        font-size: 12px;
+                        color: #696969;
+                    }
+                }
+            }
+        }
+    }
+}

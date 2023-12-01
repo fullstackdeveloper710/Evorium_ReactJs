@@ -1,0 +1,263 @@
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #1f043b;
+
+  &__inner {
+    max-width: 600px;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  &__title {
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    font-size: 36px;
+    font-family: "AeonikTRIAL Bold";
+  }
+  &__subTitle {
+    color: #bdb3c7;
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    font-family: "AeonikTRIAL Light";
+    letter-spacing: 1px;
+  }
+  .infotext {
+    color: #bdb3c7;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    font-size: 14px;
+    font-family: "AeonikTRIAL Light";
+    margin-top: 5px;
+    display: block;
+  }
+
+  .authRemember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .remember-text {
+      color: #bdb3c7;
+      font-size: 16px;
+      padding-left: 30px;
+      input {
+        opacity: 0;
+        display: none;
+      }
+
+      label {
+        position: relative;
+        cursor: pointer;
+        font-family: "AeonikTRIAL Regular";
+        font-weight: 400;
+
+        &:before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          background-color: rgba(255, 255, 255, 0.1);
+          border: 1px solid #432f64;
+          left: -30px;
+          top: 2px;
+          border-radius: 2px;
+          position: absolute;
+        }
+      }
+      input:checked + label {
+        font-weight: 600;
+      }
+      input:checked + label:after {
+        content: "";
+        width: 12px;
+        height: 6px;
+        border-bottom: 2px solid #fff;
+        border-left: 2px solid #fff;
+        transform: rotate(-45deg);
+        position: absolute;
+        left: -26px;
+        top: 8px;
+      }
+    }
+
+    a.forgotLink {
+      color: #bdb3c7;
+      text-align: right;
+      font-size: 16px;
+      font-style: normal;
+      line-height: normal;
+      background: transparent;
+      border: 0;
+      font-family: "AeonikTRIAL Regular";
+      text-decoration: none;
+    }
+  }
+  p.newUserLink {
+    color: #bdb3c7;
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: "AeonikTRIAL Regular";
+    span {
+      margin-left: 8px;
+      cursor: pointer;
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+  &__socialWrap {
+    color: #bdb3c7;
+    text-align: center;
+    margin-top: 60px;
+
+    p {
+      font-size: 18px;
+      color: #bdb3c7;
+      letter-spacing: 1px;
+    }
+
+    &__icon {
+      ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 20px 0 30px 0;
+        li {
+          margin: 0 15px 0 0;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            width: 55px;
+            height: 55px;
+            background-color: #432f64;
+            border: 1px solid #261148;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background-color: #fff;
+              color: #261148;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .signingText {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+// inputRow CSS
+.inputRow {
+  width: 100%;
+  margin-bottom: 20px;
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    border-radius: 6px;
+    background: #261148;
+    border: 01px solid transparent;
+    box-shadow: 0 0 0 !important;
+    outline: none !important;
+    color: #bdb3c7;
+    font-size: 18px;
+    font-family: "AeonikTRIAL Regular";
+    appearance: none;
+    -webkit-appearance: none;
+
+    &:focus {
+      border-color: #ae00ff;
+    }
+  }
+
+  &__icon {
+    position: relative;
+  }
+  &__iconGroup {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    color: #9181ad;
+
+    svg {
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// .editProfileUser
+
+.editProfileUser {
+  position: relative;
+  //   overflow: hidden;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  input {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: -999em;
+  }
+  label {
+    position: relative;
+    .editUser__figure {
+      width: 160px;
+      height: 160px;
+      background-color: #ae00ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        color: #fff;
+      }
+    }
+    .editUser__icon {
+      bottom: 0;
+      border-radius: 50%;
+      height: 60px;
+      background: #2e1853;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      right: -12px;
+      border: 1px solid #bdb3c7;
+      color: #bdb3c7;
+      svg {
+        width: 24px;
+        height: auto;
+      }
+    }
+  }
+}

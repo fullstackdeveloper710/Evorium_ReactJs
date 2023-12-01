@@ -1,0 +1,117 @@
+@import "./variable.scss";
+.road-map-section {
+  padding: 50px 0px;
+  margin-right: 0;
+  .title-block {
+    h2 {
+      font-size: 130px;
+      font-family: $heading-font-family;
+      color: #fff;
+      text-align: right;
+     margin-bottom: 30px;
+    }
+  }
+  .carousel {
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #616161;
+    border-radius: 15px;
+  
+    .carousel-caption {
+      position: static;
+      position: static;
+      max-width: 600px;
+      width: 100%;
+      text-align: left;
+      margin-left: auto;
+      h3 {
+        font-size: 28px;
+        font-family: $heading-font-family;
+        padding-bottom: 14px;
+      }
+      ul {
+        padding-left: 0px;
+
+        li {
+          font-family: 'Messina Sans Mono';
+          font-size: 18px;
+          letter-spacing: 1px;
+          margin-top: 8px;
+        }
+      }
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      display: none;
+    }
+    .carousel-indicators {
+      flex-direction: column;
+      left: auto;
+      margin-right: 0%;
+      margin-left: 0%;
+      top: 0px;
+      right: -124px;
+      background-image: url(../../assets/icons/user/sliderIndicator.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      justify-content: space-between;
+      margin: 0px;
+      width: 30px;
+      background-position: right;
+      button {
+        height: 2px;
+        border: 0px;
+        width: 0px;
+        position: relative;
+        text-indent: 0px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: $heading-font-family;
+      }
+      button.active::after {
+        color: #ffc700;
+      }
+      button:after {
+        position: absolute;
+        right: 100%;
+        width: 75px;
+        color: #fff;
+        top: -11px;
+      }
+      button:nth-child(1)::after {
+        content: "step 1";
+      }
+      button:nth-child(2)::after {
+        content: "step 2";
+      }
+      button:nth-child(3)::after {
+        content: "step 3";
+      }
+      button:nth-child(4)::after {
+        content: "step 4";
+      }
+    }
+  }
+}
+.slider_container {
+  position: relative;
+  width: calc(100% - 123px);
+  .virtualworld_img {
+    position: absolute;
+    left: 0px;
+    z-index: 99999;
+    width: 500px;
+    animation: anim1 5s ease-in-out infinite alternate  ;
+    transform-origin: 100% 100%;
+  }
+}
+
+@keyframes anim1{
+  0%{
+transform: rotate(10deg);
+  }
+  
+  100%{
+    transform: rotate(-10deg);
+  }
+}
